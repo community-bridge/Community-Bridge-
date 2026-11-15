@@ -7,6 +7,13 @@
 <title>Community Bridge — Find help nearby / Encuentra ayuda cerca de ti</title>
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0a453c">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Community Bridge">
 <style>
   :root{
     --ink:#1d2733; --muted:#5a6a78; --bg:#f6f3ec; --card:#ffffff;
@@ -131,6 +138,19 @@
     <div class="cats" id="catGrid"></div>
     <h2 data-i18n="startHere">Start here</h2>
     <div id="featured"></div>
+
+    <section class="card" id="installCard" aria-label="Install">
+      <h2 style="margin-top:0" data-i18n="installTitle">Put Community Bridge on your phone</h2>
+      <p data-i18n="installLead">Install it like an app — no store, no account, no cost. It opens full-screen and keeps working with a weak connection after your first visit.</p>
+      <p id="installDone" class="hidden" data-i18n="installDone">Community Bridge is installed on this device. ✅</p>
+      <button class="btn btn-primary hidden" id="installBtn" type="button" data-i18n="installBtn">📲 Install Community Bridge</button>
+      <div id="installSteps">
+        <p data-i18n="installStep1">1. Tap the ⋮ menu at the top right of Chrome.</p>
+        <p data-i18n="installStep2">2. Tap “Install app” or “Add to Home screen”.</p>
+        <p data-i18n="installStep3">3. Tap “Install”. The Community Bridge icon appears on your home screen.</p>
+        <p class="fineprint" data-i18n="installNote">On iPhone: tap Share, then “Add to Home Screen”. In other browsers, saving a bookmark works too.</p>
+      </div>
+    </section>
   </main>
 
   <main id="resultsView" class="hidden">
@@ -219,6 +239,14 @@ var I18N = {
     footerNote: "Community Bridge is a free community directory — no account, no cost. For local help anywhere, call 211.",
     pilotBanner: "PILOT PREVIEW \u2014 a review copy of Community Bridge being prepared for a possible pilot. Not the live directory.",
     privacyAnalytics: "Analytics note: this app does not collect or report visitor counts, search counts, or referral counts. There is no in-app analytics, and no usage numbers are promised to anyone.",
+    installTitle: "Put Community Bridge on your phone",
+    installLead: "Install it like an app — no store, no account, no cost. It opens full-screen and keeps working with a weak connection after your first visit.",
+    installBtn: "📲 Install Community Bridge",
+    installStep1: "1. Tap the ⋮ menu at the top right of Chrome.",
+    installStep2: "2. Tap “Install app” or “Add to Home screen”.",
+    installStep3: "3. Tap “Install”. The Community Bridge icon appears on your home screen.",
+    installNote: "On iPhone: tap Share, then “Add to Home Screen”. In other browsers, saving a bookmark works too.",
+    installDone: "Community Bridge is installed on this device. ✅",
     tcfbTitle: "Treasure Coast Food Bank — Food Finder",
     tcfbText: "Community Bridge's food listings focus on Fellsmere, Sebastian and Vero Beach. For food help across the wider Treasure Coast, the Treasure Coast Food Bank's own Food Finder lists its partner pantries and mobile distributions.",
     tcfbBtn: "Open the TCFB Food Finder",
@@ -309,6 +337,14 @@ var I18N = {
     footerNote: "Community Bridge es un directorio comunitario gratuito — sin cuenta, sin costo. Para ayuda local en cualquier lugar, llama al 211.",
     pilotBanner: "VISTA PREVIA DEL PILOTO \u2014 una copia de revisi\u00f3n de Community Bridge en preparaci\u00f3n para un posible piloto. No es el directorio en vivo.",
     privacyAnalytics: "Nota sobre anal\u00edticas: esta aplicaci\u00f3n no recoge ni reporta conteos de visitantes, b\u00fasquedas o referidos. No hay anal\u00edticas dentro de la aplicaci\u00f3n y no se prometen cifras de uso a nadie.",
+    installTitle: "Pon Community Bridge en tu teléfono",
+    installLead: "Instálalo como una aplicación — sin tienda, sin cuenta, sin costo. Se abre en pantalla completa y sigue funcionando con una conexión débil después de tu primera visita.",
+    installBtn: "📲 Instalar Community Bridge",
+    installStep1: "1. Toca el menú ⋮ en la esquina superior derecha de Chrome.",
+    installStep2: "2. Toca «Instalar app» o «Añadir a pantalla de inicio».",
+    installStep3: "3. Toca «Instalar». El icono de Community Bridge aparecerá en tu pantalla de inicio.",
+    installNote: "En iPhone: toca Compartir y luego «Añadir a pantalla de inicio». En otros navegadores, guardar un marcador también funciona.",
+    installDone: "Community Bridge ya está instalado en este dispositivo. ✅",
     tcfbTitle: "Treasure Coast Food Bank — Buscador de alimentos",
     tcfbText: "Las listas de alimentos de Community Bridge se concentran en Fellsmere, Sebastian y Vero Beach. Para ayuda alimentaria en toda la Treasure Coast, el Food Finder del Treasure Coast Food Bank muestra sus despensas asociadas y distribuciones m\u00f3viles.",
     tcfbBtn: "Abrir el buscador de alimentos de TCFB",
@@ -395,6 +431,14 @@ var I18N = {
     footerNote: "Community Bridge se yon anyè kominotè gratis — san kont, san kòb. Pou èd lokal nenpòt kote, rele 211.",
     pilotBanner: "AP\u00c8SI PILOT \u2014 yon kopi revizyon Community Bridge k ap prepare pou yon pilot posib. Se pa any\u00e8 an dir\u00e8k la.",
     privacyAnalytics: "N\u00f2t sou estatistik: aplikasyon sa a pa kolekte ni rap\u00f2te kantite vizit\u00e8, rech\u00e8ch oswa referans. Pa gen estatistik anndan aplikasyon an, epi nou pa pwom\u00e8t okenn chif itilizasyon bay p\u00e8s\u00f2n.",
+    installTitle: "Mete Community Bridge sou telefòn ou",
+    installLead: "Enstale li tankou yon aplikasyon — san magazen, san kont, san kòb. Li ouvri sou tout ekran an epi li kontinye mache ak yon koneksyon fèb apre premye vizit ou a.",
+    installBtn: "📲 Enstale Community Bridge",
+    installStep1: "1. Peze meni ⋮ ki anlè adwat nan Chrome.",
+    installStep2: "2. Peze «Enstale aplikasyon» oswa «Ajoute sou ekran dakèy».",
+    installStep3: "3. Peze «Enstale». Ikòn Community Bridge la ap parèt sou ekran dakèy ou a.",
+    installNote: "Sou iPhone: peze Pataje, epi «Ajoute sou ekran dakèy». Nan lòt navigatè yo, ou ka sove yon makè paj tou.",
+    installDone: "Community Bridge deja enstale sou aparèy sa a. ✅",
     tcfbTitle: "Treasure Coast Food Bank — Chèche manje",
     tcfbText: "Lis manje Community Bridge yo konsantre sou Fellsmere, Sebastian ak Vero Beach. Pou \u00e8d manje nan tout Treasure Coast la, Food Finder Treasure Coast Food Bank la montre bank manje patn\u00e8 li yo ak distribisyon mobil li yo.",
     tcfbBtn: "Ouvri chèche manje TCFB a",
@@ -485,6 +529,14 @@ var I18N = {
     footerNote: "O Community Bridge é um diretório comunitário gratuito — sem conta, sem custo. Para ajuda local em qualquer lugar, ligue para 211.",
     pilotBanner: "PR\u00c9VIA DO PILOTO \u2014 uma c\u00f3pia de revis\u00e3o do Community Bridge em prepara\u00e7\u00e3o para um poss\u00edvel piloto. N\u00e3o \u00e9 o diret\u00f3rio ativo.",
     privacyAnalytics: "Nota sobre an\u00e1lises: este aplicativo n\u00e3o coleta nem relata contagens de visitantes, pesquisas ou indica\u00e7\u00f5es. N\u00e3o h\u00e1 an\u00e1lises dentro do aplicativo e nenhum n\u00famero de uso \u00e9 prometido a ningu\u00e9m.",
+    installTitle: "Coloque o Community Bridge no seu telefone",
+    installLead: "Instale como um aplicativo — sem loja, sem conta, sem custo. Ele abre em tela cheia e continua funcionando com uma conexão fraca após a sua primeira visita.",
+    installBtn: "📲 Instalar o Community Bridge",
+    installStep1: "1. Toque no menu ⋮ no canto superior direito do Chrome.",
+    installStep2: "2. Toque em “Instalar app” ou “Adicionar à tela inicial”.",
+    installStep3: "3. Toque em “Instalar”. O ícone do Community Bridge aparecerá na sua tela inicial.",
+    installNote: "No iPhone: toque em Compartilhar e depois em “Adicionar à Tela de Início”. Em outros navegadores, salvar um favorito também funciona.",
+    installDone: "O Community Bridge já está instalado neste dispositivo. ✅",
     tcfbTitle: "Treasure Coast Food Bank — Localizador de alimentos",
     tcfbText: "As listas de alimentos do Community Bridge concentram-se em Fellsmere, Sebastian e Vero Beach. Para ajuda alimentar em toda a Treasure Coast, o Food Finder do Treasure Coast Food Bank lista seus bancos de alimentos parceiros e distribui\u00e7\u00f5es m\u00f3veis.",
     tcfbBtn: "Abrir o localizador de alimentos do TCFB",
@@ -1485,6 +1537,50 @@ document.getElementById("searchInput").addEventListener("input", doSearch);
 })();
 
 render();
+</script>
+<script>
+/* ============ PWA: service worker + install prompt (added 2026-11-15) ============ */
+(function () {
+  "use strict";
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("sw.js").catch(function () { /* offline support is progressive enhancement */ });
+    });
+  }
+  var deferredPrompt = null;
+  var btn = document.getElementById("installBtn");
+  function isInstalled() {
+    return (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || window.navigator.standalone === true;
+  }
+  function refreshInstallUI() {
+    var done = document.getElementById("installDone");
+    var steps = document.getElementById("installSteps");
+    if (isInstalled()) {
+      if (done) { done.classList.remove("hidden"); }
+      if (steps) { steps.classList.add("hidden"); }
+      if (btn) { btn.classList.add("hidden"); }
+      return;
+    }
+    if (btn && deferredPrompt) { btn.classList.remove("hidden"); }
+  }
+  window.addEventListener("beforeinstallprompt", function (e) {
+    e.preventDefault();
+    deferredPrompt = e;
+    refreshInstallUI();
+  });
+  window.addEventListener("appinstalled", function () {
+    deferredPrompt = null;
+    refreshInstallUI();
+  });
+  if (btn) {
+    btn.addEventListener("click", function () {
+      if (!deferredPrompt) { return; }
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(function () { deferredPrompt = null; refreshInstallUI(); });
+    });
+  }
+  refreshInstallUI();
+})();
 </script>
 </body>
 </html>
