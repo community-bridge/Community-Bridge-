@@ -2,7 +2,7 @@
    Cache-first for same-origin files, network-first for page loads.
    Bump VERSION whenever index.html or the shell files change. */
 "use strict";
-var VERSION = "cb-2026-11-15-1";
+var VERSION = "cb-2026-11-15-2";
 var CORE = [
   "./",
   "./index.html",

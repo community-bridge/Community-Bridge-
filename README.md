@@ -23,6 +23,7 @@ A free, multilingual, voice-enabled community-resource finder for Fellsmere, Seb
 
 - `index.html` — the application
 - `manifest.webmanifest`, `sw.js`, `icon-192.png`, `icon-512.png`, `icon-maskable-512.png` — Progressive Web App support (installable, offline shell)
+- `logo-community-bridge.jpg` — the Community Bridge logo artwork (source for the app icons and favicons)
 - `professor-greeting-cb-EN.mp4` / `-ES` / `-HT` / `-PT` — greeting videos
 - `captions-en.vtt` / `-es` / `-ht` / `-pt` — caption tracks for the greeting
 - `cb-professor.jpg` — Professor image / video poster
