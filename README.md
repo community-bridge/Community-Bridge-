@@ -2,7 +2,7 @@
 
 A free, multilingual, voice-enabled community-resource finder for Fellsmere, Sebastian, and Vero Beach, Florida — built for people who may not type or read comfortably.
 
-**Live demo:** https://mrjosueayalaperez-dev.github.io/Community-Bridge-/
+**Live demo:** https://community-bridge.github.io/Community-Bridge-/
 
 ## What it does
 
