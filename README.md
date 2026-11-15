@@ -22,9 +22,14 @@ A free, multilingual, voice-enabled community-resource finder for Fellsmere, Seb
 ## Repository contents
 
 - `index.html` — the application
+- `manifest.webmanifest`, `sw.js`, `icon-192.png`, `icon-512.png`, `icon-maskable-512.png` — Progressive Web App support (installable, offline shell)
 - `professor-greeting-cb-EN.mp4` / `-ES` / `-HT` / `-PT` — greeting videos
 - `captions-en.vtt` / `-es` / `-ht` / `-pt` — caption tracks for the greeting
 - `cb-professor.jpg` — Professor image / video poster
+
+## Install it on a phone
+
+Community Bridge is an installable Progressive Web App. On Android Chrome: open the live site, tap the ⋮ menu, then **Install app** (or **Add to Home screen**). On iPhone Safari: tap **Share**, then **Add to Home Screen**. No app store, no account, no cost. After the first visit, the app shell also opens with a weak or missing connection.
 
 ## Run it locally
 
@@ -36,4 +41,4 @@ Copyright (c) 2026 Josue Ayala-Perez. All rights reserved — see `LICENSE`. Com
 
 ## Contact
 
-Josue Ayala-Perez, Founder, M&Q Ecosystem — mr.josueayalaperez@gmail.com
+Community Bridge is a free community resource. For questions about a specific listing, please contact that organization directly — every listing shows its own phone number and address. Please confirm hours and eligibility before traveling.
